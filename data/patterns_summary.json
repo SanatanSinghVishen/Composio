@@ -1,0 +1,479 @@
+{
+  "summary": {
+    "total_apps": 100,
+    "top_auth": "API Key / Token",
+    "top_auth_pct": 45,
+    "self_serve_pct": 74,
+    "mcp_coverage_pct": 95,
+    "avg_viability_score": 89.4,
+    "easy_wins_count": 58,
+    "buildable_count": 87,
+    "buildable_pct": 87
+  },
+  "auth_distribution": {
+    "API Key / Token": 45,
+    "OAuth2": 34,
+    "Bearer / Bot Token": 7,
+    "Basic Auth": 6,
+    "Other": 5,
+    "None": 3
+  },
+  "access_by_category": {
+    "CRM and Sales": {
+      "Self-Serve Free": 7,
+      "Free Trial": 2,
+      "Gated": 1
+    },
+    "Support and Helpdesk": {
+      "Free Trial": 6,
+      "Self-Serve Free": 1,
+      "Self-Serve Paid": 1,
+      "Gated": 2
+    },
+    "Communications and Messaging": {
+      "Self-Serve Free": 6,
+      "Self-Serve Paid": 4
+    },
+    "Marketing, Ads, Email and Social": {
+      "Self-Serve Free": 8,
+      "Gated": 1,
+      "Self-Serve Paid": 1
+    },
+    "Ecommerce": {
+      "Self-Serve Free": 5,
+      "Gated": 1,
+      "Self-Serve Paid": 3,
+      "Unknown": 1
+    },
+    "Data, SEO and Scraping": {
+      "Self-Serve Paid": 3,
+      "Self-Serve Free": 5,
+      "Gated": 1,
+      "Free Trial": 1
+    },
+    "Developer, Infra and Data Platforms": {
+      "Self-Serve Free": 8,
+      "Free Trial": 2
+    },
+    "Productivity and Project Management": {
+      "Self-Serve Free": 8,
+      "Self-Serve Paid": 2
+    },
+    "Finance and Fintech": {
+      "Self-Serve Free": 2,
+      "Free Trial": 1,
+      "Gated": 4,
+      "Self-Serve Paid": 3
+    },
+    "AI, Research and Media-native": {
+      "Gated": 3,
+      "Self-Serve Free": 3,
+      "Self-Serve Paid": 4
+    }
+  },
+  "scores_by_category": {
+    "CRM and Sales": 91.5,
+    "Support and Helpdesk": 96.0,
+    "Communications and Messaging": 91.0,
+    "Marketing, Ads, Email and Social": 89.0,
+    "Ecommerce": 78.0,
+    "Data, SEO and Scraping": 89.0,
+    "Developer, Infra and Data Platforms": 97.5,
+    "Productivity and Project Management": 92.5,
+    "Finance and Fintech": 88.0,
+    "AI, Research and Media-native": 81.5
+  },
+  "mcp_distribution": {
+    "Official": 68,
+    "Community": 27,
+    "None": 5
+  },
+  "top_blockers": {
+    "Enterprise/gated access": 9,
+    "No MCP server": 3,
+    "Requires paid plan": 3,
+    "OAuth complexity": 2,
+    "No public API/docs": 2,
+    "Requires Meta Business verification for production": 1,
+    "Strict API access approval process.": 1,
+    "Requires Meta App Review for production.": 1,
+    "Requires setting up a Magento instance.": 1,
+    "Complex IAM auth and strict approval processes.": 1
+  },
+  "easy_wins": [
+    {
+      "name": "HubSpot",
+      "category": "CRM and Sales",
+      "score": 100,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Pipedrive",
+      "category": "CRM and Sales",
+      "score": 100,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Attio",
+      "category": "CRM and Sales",
+      "score": 100,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Front",
+      "category": "Support and Helpdesk",
+      "score": 100,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Slack",
+      "category": "Communications and Messaging",
+      "score": 100,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Shopify",
+      "category": "Ecommerce",
+      "score": 100,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Apify",
+      "category": "Data, SEO and Scraping",
+      "score": 100,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "GitHub",
+      "category": "Developer, Infra and Data Platforms",
+      "score": 100,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Vercel",
+      "category": "Developer, Infra and Data Platforms",
+      "score": 100,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Netlify",
+      "category": "Developer, Infra and Data Platforms",
+      "score": 100,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Cloudflare",
+      "category": "Developer, Infra and Data Platforms",
+      "score": 100,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Supabase",
+      "category": "Developer, Infra and Data Platforms",
+      "score": 100,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "MongoDB Atlas",
+      "category": "Developer, Infra and Data Platforms",
+      "score": 100,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Sentry",
+      "category": "Developer, Infra and Data Platforms",
+      "score": 100,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Stripe",
+      "category": "Finance and Fintech",
+      "score": 100,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Salesforce",
+      "category": "CRM and Sales",
+      "score": 95,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Zoho CRM",
+      "category": "CRM and Sales",
+      "score": 95,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Freshdesk",
+      "category": "Support and Helpdesk",
+      "score": 95,
+      "mcp_status": "Community"
+    },
+    {
+      "name": "Twilio",
+      "category": "Communications and Messaging",
+      "score": 95,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Lark (Larksuite)",
+      "category": "Communications and Messaging",
+      "score": 95,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Vonage",
+      "category": "Communications and Messaging",
+      "score": 95,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "GoHighLevel",
+      "category": "Marketing, Ads, Email and Social",
+      "score": 95,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Mailchimp",
+      "category": "Marketing, Ads, Email and Social",
+      "score": 95,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "systeme.io",
+      "category": "Marketing, Ads, Email and Social",
+      "score": 95,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "SendGrid",
+      "category": "Marketing, Ads, Email and Social",
+      "score": 95,
+      "mcp_status": "Community"
+    },
+    {
+      "name": "WooCommerce",
+      "category": "Ecommerce",
+      "score": 95,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "BigCommerce",
+      "category": "Ecommerce",
+      "score": 95,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Gumroad",
+      "category": "Ecommerce",
+      "score": 95,
+      "mcp_status": "Community"
+    },
+    {
+      "name": "DataForSEO",
+      "category": "Data, SEO and Scraping",
+      "score": 95,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "SE Ranking",
+      "category": "Data, SEO and Scraping",
+      "score": 95,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Ahrefs",
+      "category": "Data, SEO and Scraping",
+      "score": 95,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Firecrawl",
+      "category": "Data, SEO and Scraping",
+      "score": 95,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Bright Data",
+      "category": "Data, SEO and Scraping",
+      "score": 95,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Neo4j",
+      "category": "Developer, Infra and Data Platforms",
+      "score": 95,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Notion",
+      "category": "Productivity and Project Management",
+      "score": 95,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Linear",
+      "category": "Productivity and Project Management",
+      "score": 95,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Jira",
+      "category": "Productivity and Project Management",
+      "score": 95,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Asana",
+      "category": "Productivity and Project Management",
+      "score": 95,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "ClickUp",
+      "category": "Productivity and Project Management",
+      "score": 95,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Coda",
+      "category": "Productivity and Project Management",
+      "score": 95,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "QuickBooks",
+      "category": "Finance and Fintech",
+      "score": 95,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Xero",
+      "category": "Finance and Fintech",
+      "score": 95,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Reducto",
+      "category": "AI, Research and Media-native",
+      "score": 95,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Mermaid CLI",
+      "category": "AI, Research and Media-native",
+      "score": 95,
+      "mcp_status": "Community"
+    },
+    {
+      "name": "YouTube Transcript",
+      "category": "AI, Research and Media-native",
+      "score": 95,
+      "mcp_status": "Community"
+    },
+    {
+      "name": "Twenty",
+      "category": "CRM and Sales",
+      "score": 90,
+      "mcp_status": "Community"
+    },
+    {
+      "name": "Zoho Cliq",
+      "category": "Communications and Messaging",
+      "score": 90,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Discord",
+      "category": "Communications and Messaging",
+      "score": 90,
+      "mcp_status": "Community"
+    },
+    {
+      "name": "Telegram",
+      "category": "Communications and Messaging",
+      "score": 90,
+      "mcp_status": "Community"
+    },
+    {
+      "name": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "score": 90,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Meta Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "score": 90,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Klaviyo",
+      "category": "Marketing, Ads, Email and Social",
+      "score": 90,
+      "mcp_status": "Community"
+    },
+    {
+      "name": "Airtable",
+      "category": "Productivity and Project Management",
+      "score": 90,
+      "mcp_status": "Community"
+    },
+    {
+      "name": "Monday.com",
+      "category": "Productivity and Project Management",
+      "score": 90,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Smartsheet",
+      "category": "Productivity and Project Management",
+      "score": 90,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Binance",
+      "category": "Finance and Fintech",
+      "score": 90,
+      "mcp_status": "Community"
+    },
+    {
+      "name": "Fathom",
+      "category": "AI, Research and Media-native",
+      "score": 90,
+      "mcp_status": "Official"
+    },
+    {
+      "name": "Devin",
+      "category": "AI, Research and Media-native",
+      "score": 90,
+      "mcp_status": "Official"
+    }
+  ],
+  "hard_mode": [
+    {
+      "name": "Waterfall.io",
+      "category": "Data, SEO and Scraping",
+      "score": 65,
+      "blocker": "Enterprise-gated access with opaque documentation."
+    },
+    {
+      "name": "Paygent Connect",
+      "category": "Finance and Fintech",
+      "score": 60,
+      "blocker": "Gated access; sandbox difficult without partner setup."
+    },
+    {
+      "name": "NotebookLM",
+      "category": "AI, Research and Media-native",
+      "score": 40,
+      "blocker": "No official public API."
+    },
+    {
+      "name": "Otter AI",
+      "category": "AI, Research and Media-native",
+      "score": 60,
+      "blocker": "API requires Enterprise plan."
+    }
+  ]
+}
