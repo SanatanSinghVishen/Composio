@@ -1,0 +1,4 @@
+.env
+*.stackdump
+__pycache__/
+*.pyc
