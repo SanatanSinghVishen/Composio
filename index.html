@@ -2027,26 +2027,46 @@
             </div>
           </div>
 
-          <h3 class="bento-title" style="margin-top: 28px; margin-bottom: 12px;">Core Pipeline Code</h3>
-          <pre class="code-block"><code>from composio_core import ComposioToolSet
+          <h3 class="bento-title" style="margin-top: 28px; margin-bottom: 12px;">Composio SDK Pipeline Integration (Python & TypeScript)</h3>
+          <div style="display:flex; gap:10px; margin-bottom:8px;">
+            <span class="filter-pill active" style="font-size:0.75rem;">Python SDK (pip install composio)</span>
+          </div>
+          <pre class="code-block"><code># pip install composio composio-core openai python-dotenv
+import os
+from composio_core import ComposioToolSet
 from openai import OpenAI
 
-composio = ComposioToolSet(api_key=COMPOSIO_API_KEY)
-llm = OpenAI(base_url="https://openrouter.ai/api/v1", api_key=OPENROUTER_KEY)
+composio = ComposioToolSet(api_key=os.getenv("COMPOSIO_API_KEY"))
+llm = OpenAI(base_url="https://openrouter.ai/api/v1", api_key=os.getenv("OPENROUTER_API_KEY"))
 
 def research_app(app_name: str):
-    # Step 1: Discover official developer docs
+    # Step 1: Discover official developer docs via Composio Exa tool
     search_res = composio.execute("EXA_SEARCH", {"query": f"{app_name} API developer documentation authentication"})
     
-    # Step 2: Deep crawl API spec & auth instructions
+    # Step 2: Deep crawl API spec & auth instructions via Composio Firecrawl tool
     doc_content = composio.execute("FIRECRAWL_SCRAPE", {"url": search_res.top_url})
     
-    # Step 3: Structured extraction via LLM
+    # Step 3: Structured schema extraction via OpenRouter Gemini 2.5 Flash
     response = llm.chat.completions.create(
         model="google/gemini-2.5-flash",
         messages=[{"role": "user", "content": f"Extract API profile for {app_name}:\n{doc_content}"}]
     )
     return response.choices[0].message.content</code></pre>
+
+          <div style="display:flex; gap:10px; margin-top:16px; margin-bottom:8px;">
+            <span class="filter-pill" style="font-size:0.75rem; background:#10b981; color:#052e16;">TypeScript / JavaScript SDK (@composio/core)</span>
+          </div>
+          <pre class="code-block"><code>// npm install @composio/core
+import { Composio } from "@composio/core";
+
+const composio = new Composio({ apiKey: process.env.COMPOSIO_API_KEY });
+
+// Create user session and fetch agent-callable tools
+const session = await composio.create(existingUserId);
+const tools = await session.tools();
+
+// Pass tools directly to your agent runtime or OpenRouter model
+console.log(`Loaded ${tools.length} agent-callable tools for SaaS research`);</code></pre>
 
           <h3 class="bento-title" style="margin-top: 28px; margin-bottom: 12px;">Where the Human Was Needed</h3>
           <ul style="margin-left: 20px; color: var(--text-muted); font-size: 0.9rem; line-height: 1.8;">

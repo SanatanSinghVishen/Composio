@@ -1,13 +1,13 @@
 # Composio 100-App API Intelligence Research Agent
 # Python dependencies
 
-# Core
+composio>=0.7.0
 composio-core>=0.7.0
 composio-openai>=0.7.0
 openai>=1.30.0
 python-dotenv>=1.0.0
 
-# Optional: LangChain integration
+# Optional: LangChain / CrewAI integrations
 # composio-langchain>=0.7.0
 # langchain>=0.2.0
 # langchain-openai>=0.1.0
