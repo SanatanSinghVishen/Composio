@@ -4,7 +4,7 @@
 
 ## Live Demo
 
-**[View the Research Report →](https://your-username.github.io/composio-100-app-research/)**
+**[View the Research Report →](https://sanatansinghvishen.github.io/Composio/)**
 
 ---
 
@@ -79,8 +79,8 @@ Then it finds **patterns** across all 100: which auth dominates, which categorie
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/composio-100-app-research.git
-cd composio-100-app-research
+git clone https://github.com/SanatanSinghVishen/Composio.git
+cd Composio
 
 # Install dependencies
 pip install -r requirements.txt
